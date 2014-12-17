@@ -1,0 +1,17 @@
+Source: xivo-dird-plugin-google-contacts
+Section: python
+Priority: extra
+Maintainer: Sylvain Boily <sboily@avencall.com>
+Uploaders: Sylvain Boily <sboily@avencall.com>
+Build-Depends: debhelper (>= 8), dh-python, python-all (>= 2.7), python-setuptools, python-gdata
+Standards-Version: 3.9.4
+X-Python-Version: >= 2.7
+Homepage: https://github.com/sboily/xivo-dird-plugin-backend-google-contacts
+
+Package: xivo-dird-plugin-google-contacts
+Architecture: all
+Depends: ${python:Depends}, ${misc:Depends}, xivo-lib-python, xivo-dird, python-gdata
+Description: XIVO telephony systems library for directories manager
+ XIVO is a system based on a powerful IPBX, to bring an easy to
+ install solution for telephony and related services.
+ .

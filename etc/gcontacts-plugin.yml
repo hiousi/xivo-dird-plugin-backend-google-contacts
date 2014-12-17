@@ -1,0 +1,6 @@
+type: gcontacts
+name: my-gcontacts
+gcontacts_config:
+    username:
+    password:
+    max_results: 100
