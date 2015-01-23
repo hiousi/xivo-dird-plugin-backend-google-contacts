@@ -6,7 +6,7 @@ XiVO dird plugin google contacts
 
 ## Info
 
-This plugin getting contacts from google contacts.
+This plugin getting contacts from google contacts. For the moment it use the old google contacts API.
 
 ## How to use
 
