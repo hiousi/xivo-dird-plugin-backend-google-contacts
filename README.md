@@ -15,6 +15,32 @@ In your config.yml enabled the gcontacts plugin
     enabled_plugins:
         backends:
             - gcontacts
+            
+The possible fields with this plugin is :
+
+    views:
+        displays:
+            default_display:
+                -
+                    title: Firstname
+                    default: Unknown
+                    field: firstname
+                -
+                    title: Lastname
+                    default: Unknown
+                    field: lastname
+                -
+                    title: Number
+                    default:
+                    field: number
+                -
+                    title: Mobile
+                    default:
+                    field: mobile_phone_number
+                -
+                    title: Email
+                    default:
+                    field: email
 
 and added the source like
 
