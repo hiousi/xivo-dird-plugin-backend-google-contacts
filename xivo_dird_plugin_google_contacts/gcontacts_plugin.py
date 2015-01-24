@@ -41,9 +41,7 @@ class GcontactsPlugin(BaseSourcePlugin):
     def search(self, term, profile=None, args=None):
         contents = self._fetch_content(term=term)
         
-        if contents:
-            return [self._source_result_from_content(content) for content in contents]
-        return ()
+        return [self._source_result_from_content(content) for content in contents]
 
     def _source_result_from_content(self, content):
         return self._SourceResult(content)
@@ -54,7 +52,7 @@ class GcontactsPlugin(BaseSourcePlugin):
         feed = self.contact_client.GetContacts(q=query)
 
         if not feed.entry:
-            return False
+            return ()
 
         return [self._result_from_query(entry) for entry in feed.entry if self._result_from_query(entry)]
 
