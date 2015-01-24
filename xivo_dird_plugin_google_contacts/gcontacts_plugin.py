@@ -40,8 +40,10 @@ class GcontactsPlugin(BaseSourcePlugin):
 
     def search(self, term, profile=None, args=None):
         contents = self._fetch_content(term=term)
-
-        return [self._source_result_from_content(content) for content in contents]
+        
+        if contents:
+            return [self._source_result_from_content(content) for content in contents]
+        return ()
 
     def _source_result_from_content(self, content):
         return self._SourceResult(content)
