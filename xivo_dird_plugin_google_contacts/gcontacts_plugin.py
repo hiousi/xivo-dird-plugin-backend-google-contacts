@@ -58,13 +58,13 @@ class GcontactsPlugin(BaseSourcePlugin):
 
 
     def _result_from_query(self, entry):
-        contact = { 'firstname' : '',
-                    'lastname' : '',
-                    'number' : '',
-                    'email' : '',
-                    'entity' : '',
-                    'faxnumber' : '',
-                    'mobile_phone_number' : '',
+        contact = { 'firstname' : None,
+                    'lastname' : None,
+                    'number' : None,
+                    'email' : None,
+                    'entity' : None,
+                    'faxnumber' : None,
+                    'mobile_phone_number' : None,
                   }
 
         if entry.name:
