@@ -58,3 +58,5 @@ Finally added a configuration for the source in the sources.d like google_contac
         username: my_username@gmail.com
         password: my_password
         max_results: 100
+    source_to_display_columns:
+        mobile_phone_number: mobile
