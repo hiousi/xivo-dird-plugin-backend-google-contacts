@@ -25,18 +25,20 @@ The possible fields with this plugin is :
                     title: Firstname
                     default: Unknown
                     field: firstname
+                    type: name
                 -
                     title: Lastname
                     default: Unknown
                     field: lastname
+                    type: name
                 -
                     title: Number
-                    default:
                     field: number
+                    type: number
                 -
                     title: Mobile
-                    default:
-                    field: mobile_phone_number
+                    field: mobile
+                    type: number
                 -
                     title: Email
                     default:
